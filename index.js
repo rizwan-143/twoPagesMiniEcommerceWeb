@@ -121,7 +121,7 @@ itemsForHomePage.forEach((item , index) => {
   itemCard.innerHTML += `
     <div class="card border w-[300px] p-1 m-4 rounded-md cursor-pointer overflow-hidden relative group">
       <div class="card-header p-0">
-        <img src="${item.image} ?? ./assests/data/download (3).png" alt="${item.name}" class="w-full h-40 object-cover rounded-md group-hover:scale-110 transition-all duration-1000 ease-in-out">
+        <img src="./assests/data/download (3).png" alt="${item.name}" class="w-full h-40 object-cover rounded-md group-hover:scale-110 transition-all duration-1000 ease-in-out">
       </div>
       <div class="card-body mt-2">
         <div class="name">
