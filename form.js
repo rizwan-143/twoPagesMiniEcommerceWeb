@@ -27,6 +27,7 @@ registerationForm.addEventListener('submit' , function(event){
      }
     registeredUsers.push(resgisterUser);
     localStorage.setItem('registeredUsers' , JSON.stringify(registeredUsers));
+    event.target.reset();
 
     console.log(resgisterUser);
     
@@ -52,6 +53,7 @@ loginForm.addEventListener('submit' , function(event) {
         alert('user login successfuly');
             localStorage.setItem('currentUser' , JSON.stringify(findUser));
             window.location.href = '../index.html'
+            event.target.reset();
     }else{
         alert('invalid credentials !')
     }
