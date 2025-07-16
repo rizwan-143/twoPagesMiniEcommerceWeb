@@ -27,6 +27,7 @@ registerationForm.addEventListener('submit' , function(event){
      }
     registeredUsers.push(resgisterUser);
     localStorage.setItem('registeredUsers' , JSON.stringify(registeredUsers));
+    alert('account is registered successfully !');
     event.target.reset();
 
     console.log(resgisterUser);
