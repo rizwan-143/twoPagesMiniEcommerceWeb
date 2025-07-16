@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+    <title>cart</title>
+</head>
+<body>
+    
+
+    <div class="">
+        <h3 class="text-3xl uppercase text-black text-center">
+            my cart
+        </h3>
+    </div>
+     <div class="relative left-2">
+      <button class="bg-red-400 p-1 rounded-lg text-white capitalize hover:bg-red-600 transition-all duration-700 ease-in-out" id="home">home</button>
+    </div>
+
+    <div class="">
+        <button class="bg-red-600 text-white p-1 rounded-md absolute right-3" id="clear-cart">clear cart</button>
+    </div>
+
+    <div class=" mt-4 flex flex-col items-center justify-center" id="cart-length">
+        <p class="text-red-600 text-3xl capitalize text-center">your cart is empty</p>
+        <button class="bg-green-500 p-1 rounded-md capitalize mt-4 text-white" id="select-products">go to products</button>
+    </div>
+
+<div class="cart w-full justify-around gap-3" id="cart">
+
+</div>
+
+
+<div class="flex justify-center mt-5">
+    <div class="price p-2 text-red-700 capitalize text-2xl shadow-lg">
+        total price : <strong class="total-price" id="total-price"></strong>
+    </div>
+</div>
+
+    <script src="../addToCart.js"></script>
+</body>
+</html>

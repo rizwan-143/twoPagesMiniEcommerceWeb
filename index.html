@@ -1,0 +1,71 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>mini ecommerce web</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    
+
+<nav class="navbar w-full flex p-1 capitalize justify-around items-center bg-gray-300 px-3">
+    <!-- here goes logo -->
+   <!-- <div class="flex justify-around  w-full lg:w-1/2"> -->
+     <div class="nav-logo">
+        <p class="font-bold text-sm lg:text-xl">two pages mini ecommerce web</p>
+    </div>
+
+
+    <!-- here goes humberger -->
+
+    <div class="lg:hidden block order-1" id="humberger">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+   <!-- </div> -->
+
+    <div class=" flex flex-col lg:flex-row items-center justify-between  w-full lg:w-1/2 ">
+         <!-- here goes navbar menu -->
+   <div
+  id="menu"
+  class="nav-menu opacity-0 pointer-events-none absolute top-0 left-0 w-fit  bg-gray-600 h-screen flex-col gap-5 p-4 
+         -translate-x-96  transition-transform duration-500 ease-in-out transform z-20   lg:opacity-100 lg:pointer-events-auto lg:relative lg:translate-x-0 lg:flex lg:flex-row lg:gap-5 lg:h-fit lg:bg-transparent"
+>
+        <ul class="flex flex-col lg:flex-row gap-5 cursor-pointer text-sm font-bold  ">
+            <li id="my-products">products</li>
+            <li class="my-cart">my cart</li>
+            <li id="logout">logout</li>
+        </ul>
+    </div>
+
+    <!-- here goes credentials -->
+    <div class="text-[15px] lg:text-sm login-signup cursor-pointer " id="login-signup">
+        <span>login</span>
+        <span>/</span>
+        <span>sign up</span>
+    </div>
+
+    <!-- user profile -->
+     <div class="my-profile relative group cursor-pointer z-30" id="my-profile">
+        <p>my profile</p>
+        <ul class="text-[15px] lg:text-sm hidden bg-black text-white p-3 right-0 rounded-md absolute group-hover:block w-[100px]">
+            <li>my profile</li>
+            <li class="my-cart">my cart</li>
+            <li id="logout">logout</li>
+        </ul>
+     </div>
+    </div>
+   </nav>
+
+
+<div id="item-card" class="flex flex-wrap gap-4 justify-center">
+
+  </div>
+
+
+  <script  type="module" src="./index.js" ></script>
+</body>
+</html>
