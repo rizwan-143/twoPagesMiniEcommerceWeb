@@ -79,7 +79,7 @@ humberger.addEventListener('click', function () {
 
 
 
-import { items } from "./assests/data/data.js";
+import { itemsForHomePage } from "./assests/data/data.js";
 const itemCard = document.getElementById('item-card');
 
 
@@ -94,7 +94,7 @@ function addToCart(event) {
     
     const index = event.currentTarget.dataset.index;
     
-    const selectedItem = { ...items[index], currentUserEmail: currentUser.userEmail };
+    const selectedItem = { ...itemsForHomePage[index], currentUserEmail: currentUser.userEmail };
     
     const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
        const matchItem = cartItems.find((item) =>{
@@ -117,7 +117,7 @@ function addToCart(event) {
     
 
 
-items.forEach((item , index) => {
+itemsForHomePage.forEach((item , index) => {
   itemCard.innerHTML += `
     <div class="card border w-[300px] p-1 m-4 rounded-md cursor-pointer overflow-hidden relative group">
       <div class="card-header p-0">
