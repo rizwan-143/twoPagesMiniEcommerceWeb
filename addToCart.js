@@ -7,7 +7,8 @@ const selectProducts = document.getElementById('select-products');
 const clearCart = document.getElementById('clear-cart');
 const totalPrice = document.getElementById('total-price');
 const backToHome = document.getElementById('home');
-
+const cartQuantity = document.getElementById('cart-quantity');
+ 
 // Go back to home
 backToHome.addEventListener('click', () => {
   window.location.href = '../index.html';
@@ -104,5 +105,7 @@ cartItemsDiv.forEach((cartItem, index) => {
     }
   });
 });
+
+cartQuantity.innerText = currentItems.length;
 
 updateTotal();

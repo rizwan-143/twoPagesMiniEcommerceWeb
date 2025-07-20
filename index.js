@@ -10,7 +10,7 @@ let loginUser = JSON.parse(localStorage.getItem('currentUser'));
 const myProducts = document.getElementById('my-products');
 const humberger = document.getElementById('humberger');
 const menu  = document.getElementById('menu');
-
+const cartCount = document.getElementById("cart-count");
 if (loginSignup && myProfile) {
   if (loginUser) {
     loginSignup.classList.add('hidden');

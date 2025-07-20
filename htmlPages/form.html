@@ -14,27 +14,19 @@
     </div>
     <div class="flex flex-col lg:flex-row mt-6 px-3 gap-3 justify-around items-center lg:h-[300px] w-full">
         <!-- sign up form -->
-         <form  class=" w-full lg:w-1/4 flex flex-col gap-3 border border-gray-500 p-3" id="registeration-form">
+         <form  class=" w-full lg:w-1/4 flex flex-col gap-3 border  p-3" id="registeration-form">
             <h3>sign up</h3>
-            <input type="text" placeholder="enter your name" name="registrationName" id="" class="border border-black  text-sm p-2 rounded-md">
-            <input type="email" placeholder="email address" name="registrationEmail" id="" class="border border-black text-sm p-2 rounded-md">
+            <input type="text" placeholder="enter your name" name="registrationName" id="" class="border border-black  text-sm p-2 rounded-md" required>
+            <input type="email" placeholder="email address" name="registrationEmail" id="" class="border border-black text-sm p-2 rounded-md" required>
             <input type="password" name="registrationPassword" placeholder="password" class="border border-black  text-sm p-2 rounded-md">
             <button class="bg-green-500 p-1 rounded-md capitalize" type="submit">
                 register
             </button>
+            <a href="./login.html" class="text-blue-500 underline text-[10px]">have acct ?</a>
+
          </form>
 
 
-
-         <!-- login form -->
-            <form  class=" w-full lg:w-1/4 flex flex-col gap-3 border border-gray-500 p-3" id="login-form">
-            <h3>login</h3>
-            <input type="email" placeholder="email address" name="loginEmail" id="" class="border border-black text-sm p-2 rounded-md">
-            <input type="password" name="loginPassword" placeholder="password" class="border border-black  text-sm p-2 rounded-md">
-            <button class="bg-green-500 p-1 rounded-md capitalize" type="submit">
-                login
-            </button>
-         </form>
     </div>
 
    <script src="../form.js"></script>
