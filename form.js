@@ -1,5 +1,10 @@
 const registerationForm = document.getElementById('registeration-form');
 const registeredUsers = JSON.parse(localStorage.getItem('registeredUsers')) || [];
+const directLogin = document.getElementById('direct-login');
+
+directLogin.addEventListener("click" , function(){
+    window.location.href =  './login.html'
+})
 
 const backToHome = document.getElementById('home');
 
